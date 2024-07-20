@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Merkeziyetsiz Pazar Yeri</h1>
+        <h1>NFT Marketplace</h1>
         <WalletConnect setWalletAddress={setWalletAddress} />
         {walletAddress && <p>Cüzdan Adresi: {walletAddress}</p>}
         {walletAddress && <MintNFT marketplaceAddress={marketplaceAddress}/>}
