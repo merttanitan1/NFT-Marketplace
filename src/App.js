@@ -3,6 +3,7 @@ import WalletConnect from "./components/WalletConnect";
 import MintNFT from "./components/MintNFT";
 import ListNFT from "./components/ListNFT";
 import BuyNFT from "./components/BuyNFT";
+import TokenList from "./components/TokenList";
 
 const App = () => {
   const [walletAddress, setWalletAddress] = useState(null);
@@ -17,6 +18,7 @@ const App = () => {
         {walletAddress && <MintNFT marketplaceAddress={marketplaceAddress}/>}
         {walletAddress && <ListNFT marketplaceAddress={marketplaceAddress}/>}
         {walletAddress && <BuyNFT marketplaceAddress={marketplaceAddress}/>}
+        {walletAddress && <TokenList marketplaceAddress={marketplaceAddress}/>}
       </header>
     </div>
   );
